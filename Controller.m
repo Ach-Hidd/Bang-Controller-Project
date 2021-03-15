@@ -52,8 +52,11 @@ for ci = 1:n_times
      q = q + dt * dq;
      q_Matrix(1,ci) = q;
      
-     %PD controller calculation: (closed-loop, with the reference is 1 meter (Point B))
+     %PD controller law calculation: (closed-loop, with the reference is 1 meter (Point B))
      F = Kp*(1-q) + Kd*(0-dq);
+     
+     %Bang-Bang controller law Calculation: 
+     %F = Fmax * sign(-(Fmax*(q-1))-(dq*abs(dq)/2));
      
      % force limitation (optionnal)
      if abs(F)> Fmax
