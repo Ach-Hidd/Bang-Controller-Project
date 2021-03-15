@@ -84,7 +84,7 @@ for ci = 1:n_times
     %%% Write the animated GIF %%%
     if ci==1;
           imwrite(imind,cm,filename,'gif', 'Loopcount',inf, 'DelayTime', .05); 
-    elseif (mod(n, 1))==0;
+    elseif (mod(ci, 1))==0;
           imwrite(imind,cm,filename,'gif','WriteMode','append', 'DelayTime', .05); 
      end 
     pause(.02)
