@@ -6,11 +6,9 @@ xlabel('x');
 ylabel('dotx');
 
 hold on
-
 x = -100:10:100;
 n_times = length(x);
 y_Matrix = zeros(1, n_times);
-
 for i = 1:n_times
     if 0 < x(i)
         y = -sqrt(2*x(i));
