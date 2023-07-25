@@ -63,30 +63,25 @@ The system has 2 states: the position \(x(t)\) and the velocity \(\dot{x}(t)\), 
 
 We start with the case where the mass is at acceleration \(F_{\text{max}}\) and we drive the functions that describe the phase plane, and then we do the same calculation for \(-F_{\text{max}}\).
 
-From the 2nd law of Newton \(\ddot{x}(t) = F_{\text{max}} = 1N\):
-we can integrate to get velocity, and again to get position, giving the result:
+From the 2nd law of Newton \( \ddot{x}(t) = F_{\text{max}} = 1 \, \text{N} \), we can integrate to get velocity, and again to get position, giving the result:
 
-\[
+\[ 
 \begin{align*}
-\ddot{x}(t) = F_{\text{max}} = 1 \\
-\dot{x}(t) = \dot{x}(0) + t \\
-x(t) = x(0) + \dot{x}(0) t + \frac{1}{2} t^2.
-\end{align*}
+\ddot{x}(t) &= F_{\text{max}} = 1 \\
+\dot{x}(t) &= \dot{x}(0) + t \\
+x(t) &= x(0) + \dot{x}(0) t + \frac{1}{2} t^2.
+\end{align*} 
 \]
 
 We get rid of the time variable by substituting \(t\) from the second equation: \(t = \dot{x} - \dot{x}(0)\), and plugging it in the third equation, we get:
 
-\[
-x = \frac{1}{2} \dot{x}^2 + \text{cnt}_1
-\]
+\[ x = \frac{1}{2} \dot{x}^2 + \text{cnt}_1 \]
 
 with \(\text{cnt}_1 = x(0) - \frac{1}{2}\dot{x}^2(0)\).
 
-For the deceleration phase \(\ddot{x}(t) = -F_{\text{max}}\) with \(-F_{\text{max}} = -1N\) we get:
+For the deceleration phase \( \ddot{x}(t) = -F_{\text{max}} \) with \( -F_{\text{max}} = -1 \, \text{N} \) we get:
 
-\[
-x = - \frac{1}{2} \dot{x}^2 + \text{cnt}_2
-\]
+\[ x = - \frac{1}{2} \dot{x}^2 + \text{cnt}_2 \]
 
 with \(\text{cnt}_2 = x(0) + \frac{1}{2}\dot{x}^2(0)\).
 
