@@ -27,19 +27,19 @@ In this Project, we formulated the problem as an optimal Bang-Bang control polic
 ## PD Controller Results
 At first, I tried to control the system with a \(PD\) controller and see the results. I found that for some gains, the system may overshoot, but if we crank up the gain to the optimal level using [SISOTOOL](https://www.mathworks.com/help/control/ref/controlsystemdesigner-app.html), we get optimal results.
 
-![Step response](img/portfolio/Step_response.jpg)
+![Step response](img/Step_response.jpg)
 Here are the results for \(K_p = 10\), and \(K_d = K_p/2\).
 
-![PD Controller Results](img/portfolio/kp_10.gif)
+![PD Controller Results](img/kp_10.gif)
 
 ## Bang-Bang Controller Results
 The results seem neat and converge quite well. We might improve it by setting a limitation on the force \(F\), in this case, \(F_{\text{max}} = 1N\).
 
-![Bang-Bang Controller Results](img/portfolio/Sat_F.gif)
+![Bang-Bang Controller Results](img/Sat_F.gif)
 
 Even though the controller is still not a Bang-bang controller because the slope between the 2 states is a finite number. The difficulty of the problem arises from the fact that this is an optimal control problem, which makes it necessary to formulate the problem as a cost function framework and then solve it with one of the iterative methods to find the optimal solution and the least cost expensive. In this case, that would be either dynamical programming or graph search.
 
-![Large Image](img/portfolio/large-3.jpg)
+![Large Image](img/large-3.jpg)
 
 Since we are looking for the most optimal control policy, we should first write the mathematical description of the problem and then define the cost function.
 
