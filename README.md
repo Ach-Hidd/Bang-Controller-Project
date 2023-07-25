@@ -90,3 +90,6 @@ For the sake of making the problem more visually understandable, we give the coo
 From that, we can conclude the Bang-bang policy used for optimal control:
 
 ![Bang-Bang Policy](img/Bang_Policy.jpeg)
+
+
+TO BE CONTINUED.....................
