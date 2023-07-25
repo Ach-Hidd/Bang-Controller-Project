@@ -92,8 +92,8 @@ with \(\text{cnt}_2 = x(0) + \frac{1}{2}\dot{x}^2(0)\).
 
 For the sake of making the problem more visually understandable, we give the coordinate \(x_B = 0\) to the arrival point \(B\), and we already know that \(\dot{x}_B = 0\). We draw the phase plot for both trajectories, we get:
 
-![Vector Field](img/portfolio/Vector_Field.jpg)
+![Vector Field](img/Vector_Field.jpg)
 
 From that, we can conclude the Bang-bang policy used for optimal control:
 
-![Bang-Bang Policy](img/portfolio/Bang_Policy.jpeg)
+![Bang-Bang Policy](img/Bang_Policy.jpeg)
