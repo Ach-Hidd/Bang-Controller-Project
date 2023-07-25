@@ -1,11 +1,3 @@
-# Bang-Controller-Project
-Bang Bang controller for a moving mass
-
-I tuned the PI controller, to get the Bang-bang effect.
-At the beginning I got discretization error but with the right tuning I got it!
-
-The next step would be to try: Dynamics Programming techniques, which are much more advanced, but computationally expensive.
-
 <!--Main title-->
 # The Bang-bang controller!
 How to get from point A to B in the shortest time
@@ -30,7 +22,7 @@ The algorithms used to solve this problem are available on my [Github](https://g
 
 In this Project, we formulated the problem as an optimal Bang-Bang control policy and then defined a cost function. Afterward, we solved it using dynamic programming to find the most optimal control solution.
 
-![Interactive Cost function of the Bang Bang controller](http://underactuated.mit.edu/data/double_integrator_mintime_cost_to_go.html)
+[Interactive Cost function of the Bang Bang controller](http://underactuated.mit.edu/data/double_integrator_mintime_cost_to_go.html)
 
 ## PD Controller Results
 At first, I tried to control the system with a \(PD\) controller and see the results. I found that for some gains, the system may overshoot, but if we crank up the gain to the optimal level using [SISOTOOL](https://www.mathworks.com/help/control/ref/controlsystemdesigner-app.html), we get optimal results.
