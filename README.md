@@ -18,8 +18,6 @@ Our linear control strategy won't be the optimal regarding the shortest time nee
 This problem is quite classic in the field of optimal control. For more literature information, check "minimum time control."
 
 ## Job Done
-The algorithms used to solve this problem are available on my [Github](https://github.com/Hiddane/).
-
 In this Project, we formulated the problem as an optimal Bang-Bang control policy and then defined a cost function. Afterward, we solved it using dynamic programming to find the most optimal control solution.
 
 [Interactive Cost function of the Bang Bang controller](http://underactuated.mit.edu/data/double_integrator_mintime_cost_to_go.html)
