@@ -20,8 +20,6 @@ This problem is quite classic in the field of optimal control. For more literatu
 ## Job Done
 In this Project, we formulated the problem as an optimal Bang-Bang control policy and then defined a cost function. Afterward, we solved it using dynamic programming to find the most optimal control solution.
 
-[Interactive Cost function of the Bang Bang controller](http://underactuated.mit.edu/data/double_integrator_mintime_cost_to_go.html)
-
 ## PD Controller Results
 At first, I tried to control the system with a \(PD\) controller and see the results. I found that for some gains, the system may overshoot, but if we crank up the gain to the optimal level using [SISOTOOL](https://www.mathworks.com/help/control/ref/controlsystemdesigner-app.html), we get optimal results.
 
